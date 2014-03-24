@@ -75,6 +75,6 @@ foreach($volumes As $volume)
   );
 }
 
-file_put_contents('/usr/local/ec2/db.json', json_encode($db));
+file_put_contents(__DIR__.'/db.json', json_encode($db));
 
 return;
