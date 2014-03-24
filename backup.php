@@ -22,7 +22,7 @@ $client = Ec2Client::factory(
     )
 );
 
-$db = json_decode(file_get_contents('/usr/local/ec2/db.json'), TRUE);
+$db = json_decode(file_get_contents(__DIR__.'/db.json'), TRUE);
 
 $snapshots = array();
 foreach($db AS $key => $snapshot)
