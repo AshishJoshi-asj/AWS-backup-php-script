@@ -9,6 +9,7 @@ $volumes    = array('vol-********');
 $api_key    = 'AKIAIXXXXXXXXXXXXXXX';
 $api_secret = 'IzMni.........................emQKct';
 $ec2_region = 'us-east-1';
+$snap_descr = "Daily backup";
 
 require 'aws/aws-autoloader.php';
 
@@ -63,7 +64,7 @@ foreach($volumes As $volume)
         array(
              'DryRun'      => $dryrun,
              'VolumeId'    => $volume,
-             'Description' => 'Daily backup',
+             'Description' => $snap_descr,
         )
     );
 
