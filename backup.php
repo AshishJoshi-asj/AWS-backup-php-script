@@ -2,14 +2,14 @@
 <?php
 date_default_timezone_set('UCT');
 
-$dryrun     = FALSE;
-$interval   = '24 hours';
-$keep_for   = '10 Days';
-$volumes    = array('vol-********');
-$api_key    = 'AKIAIXXXXXXXXXXXXXXX';
-$api_secret = 'IzMni.........................emQKct';
-$ec2_region = 'us-east-1';
-$snap_descr = "Daily backup";
+    $dryrun     = FALSE;
+    $interval   = '24 hours';
+    $keep_for   = '10 Days';
+    $volumes    = array('vol-********');
+    $api_key    = 'AKIAIXXXXXXXXXXXXXXX';
+    $api_secret = 'IzMni.........................emQKct';
+    $ec2_region = 'us-east-1';
+    $snap_descr = "Daily backup";
 
 require 'aws/aws-autoloader.php';
 
